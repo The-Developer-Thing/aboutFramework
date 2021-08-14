@@ -319,13 +319,13 @@ There is some problem with syntax.*/
 ////////////********************GEEKSFORGEEKS***********************///////////
 //$ sign use to access jQuery
 
-$(document).ready(function(){
-  // $('p').hover(function(){
-  //   $(this).css('background-color', 'blue');
-  // }, function(){
-  //   $(this).css('background-color', 'orange');
-  // });
-});
+// $(document).ready(function(){
+//   // $('p').hover(function(){
+//   //   $(this).css('background-color', 'blue');
+//   // }, function(){
+//   //   $(this).css('background-color', 'orange');
+//   // });
+// });
 
 ////////*********************************************************************//////////
 
@@ -456,34 +456,34 @@ let/const - block scoped
   
 // };
 
-function lengthOfLongestSubstring(s) {
+// function lengthOfLongestSubstring(s) {
     
-  var str = '';
-    var temp = '';
-    var  temp_new = '';
-    for(let i =0; i<s.length; i++){
-        if(str.includes(s[i]) == true){
-            temp = str;
-            if(temp_new.length < temp.length){
-              temp_new = '';
-              temp_new = temp;
-              }
-            //console.log(str);
-            console.log(temp);
-            let index = str.indexOf(s[i]);
-            str = str.substr(index + 1);
-            //console.log(str);
-        } 
-        str += s[i];
-        console.log(str);
-        // if(temp_new.length < temp.length){
-        // temp_new = '';
-        // temp_new = temp;
-        // }
-    }
-  // return temp.length;
-  console.log(temp_new.length);
+//   var str = '';
+//     var temp = '';
+//     var  temp_new = '';
+//     for(let i =0; i<s.length; i++){
+//         if(str.includes(s[i]) == true){
+//             temp = str;
+//             if(temp_new.length < temp.length){
+//               temp_new = '';
+//               temp_new = temp;
+//               }
+//             //console.log(str);
+//             console.log(temp);
+//             let index = str.indexOf(s[i]);
+//             str = str.substr(index + 1);
+//             //console.log(str);
+//         } 
+//         str += s[i];
+//         console.log(str);
+//         // if(temp_new.length < temp.length){
+//         // temp_new = '';
+//         // temp_new = temp;
+//         // }
+//     }
+//   // return temp.length;
+//   console.log(temp_new.length);
   
-};
-var t = "aab";
-lengthOfLongestSubstring(t);
+// };
+// var t = "aab";
+// lengthOfLongestSubstring(t);

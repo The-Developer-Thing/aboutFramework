@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "..\\pickapp"
+		},
+		{
+			"path": "..\\Pickapp_old"
+		},
+		{
+			"path": "..\\practice_with_harry"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": true,
+		"liveServer.settings.multiRootWorkspaceName": "practice_with_harry"
+	}
+}

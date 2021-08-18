@@ -10,18 +10,75 @@
 "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
     </script>
     <style>
-        .new {
+        /* .new {
             color: red;
-        }
+        } */
         p {
             width: 55%;
-            height: 80px;
+            height: 10 px;
             padding: 20px;
             margin: 10px;
             border: 2px solid green;
-            font-size: 50px;
+            font-size: 15px;
         }
     </style>
+<script type="text/javascript">
+        //Linked In jQuery Learning
+ $("document").ready(function(){
+
+//append
+// $("#content").append("<p>The page is just loaded</p>")
+
+//Selectors and filters
+//$("p").css("border", "3px solid red"); //Change all P element border color red
+ //$(".selectors").css("border", "3px solid red"); //Change only selectors class element border color red
+ //$("#intro").css("border", "3px solid red"); //Change intro id content border color red
+ //$("p:first").css("border", "3px solid red"); //Change first para content border color red
+ //$("h2:not(.selectors)").css("border", "3px solid red"); //Change all h2 tags where class is not seletors element border color red
+
+
+//ajax intro
+//$("document").on("click",getContent());
+// $("loadhtml").on("click",loadHTML());
+
+// function getContent(){
+//     $.ajax("sampletextcontent.txt", {
+//         success:setContent,
+//         type: "GET",
+//         dataType: "text"
+//     });
+// }
+
+// function setContent(data, status, jqxhr){
+//     alert(data);
+//     $("#example").text(data);
+// }
+
+// function loadHTML(){
+//     $("#example").load("samplehtml.html");
+// }
+
+ //Creating and modifying page content
+
+ //create new content
+//  var newP = $("<p>");
+//  newP.append("<em>Hello There</em>");
+
+//   $("#example").html(newP);
+
+ // $("#creation").prepend("Watch this! ");
+
+//  //change the existing content
+
+//  $("#example").html("<h2>This is new H2</h2>");
+
+ //$("#example").text("<h2>This is a new H2</h2>");
+
+ //Event Handling
+
+});
+
+    </script>
 </head>
 
 <body>
@@ -39,9 +96,45 @@
         <button id="first_button">click me</button>
     </div>
     <p>GeeksforGeeks !</p> -->
+    <h1 id="intro">
+        Introduction of Jquery Selectors and Filters
+    </h1>
+    <p>
+        This is outer paragraph.
+        </p>
     <form id="frm">
-    <div>
-    <div>
+    <div id="content">
+        <p>
+        This is paragraph.
+        </p>
+
+        <ul>
+            <li>
+                <code>ajax()</code>:used to perform generic ajax
+            </li>
+            <li>
+                <code>load()</code>:Load ajax content directly into a page element
+            </li>
+        </ul>
+        <h2 id="creation" class="selectors">
+            Selectors
+        </h2>
+        <p>
+            This is Selectors paragraph.
+            </p>
+        <h2 id="changing" class="filters">
+            Filters
+        </h2>
+        <p>
+            This is Filters paragraph.
+        </p>
+
+        <div id="example">
+            
+        </div>
+        <button id="getContent">Get Text</button>
+        <button id="loadhtml">Load HTML</button>
+    <!-- <div>
     Age   :    <input type="text" name="age" id="age" class="bmi" placeholder="enter age">
     </div>
     <div>
@@ -53,7 +146,8 @@
     <button id="btn" name="btn" class="btn">Submit</button>
     <div>
         Result:    <input type="text" name="res" id="res" class="bmi" placeholder="Your BMI">
-    </div>
+    </div> -->
+
     </div>
     </form>
     <!-- <button id="" onclick="clicked()">click</button> -->
@@ -64,7 +158,26 @@
 
     </script> -->
     <script>
+        //Linked In jQuery Learning
+        // $("document").ready(function(){
+
+        //     //append
+        //    // $("#content").append("<p>The page is just loaded</p>")
+        //     $("p").css("border", "3px splid red");
+        //     // $(".selectors").css("border", "3px splid red");
+        //     // $("#intro").css("border", "3px splid red");
+        //     // $("p:first").css("border", "3px splid red");
+        //     // $("h2:not(.selectors)").css("border", "3px splid red");
         
+        // });
+
+        // window.addEventListener("DOMContentLoaded", function(evt){
+        //     var elem = document.getElementById("content");
+        //     var para = document.createElement("p");
+        //     var text = document.createTextNode("The page just Loaded");
+        //     para.appendChild(text);
+        //     elem.appendChild(para);
+        // })
     </script>
     <script src="index.js"></script>
     <script src="ds_algo_js_practice.js"></script>
